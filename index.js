@@ -11,27 +11,34 @@ class Hero {
       let ataque = '';
       switch (this.tipo) {
           case 'mago':
-              ataque = 'usou magia';
+              ataque = ' magia';
               break;
           case 'guerreiro':
-              ataque = 'usou espada';
+              ataque = ' uma espada';
               break;
           case 'monge':
-              ataque = 'usou artes marciais';
+              ataque = 'artes marciais';
               break;
           case 'ninja':
-              ataque = 'usou shuriken';
+              ataque = 'um shuriken';
               break;
           default:
-              ataque = 'usou um ataque especial';
+              ataque = ' um ataque especial';
       }
       console.log(`O ${this.tipo} atacou usando ${ataque}`);
   }
 }
 
 //instanciando um objeto
-const meuHeroi = new Hero('Fulano', 25, 'ninja');
+const meuHeroi = new Hero('Fabio', 36, 'ninja');
+const meuHeroi2= new Hero("jair",45,"guerreiro")
+const meuHeroi3= new Hero("kaue",16,"mago")
+const meuHeroi4= new Hero("josé",60,"monge")
+const meuHeroi5= new Hero("Gui",30,"soldado")
 meuHeroi.atacar();
-
+meuHeroi2.atacar()
+meuHeroi3.atacar()
+meuHeroi4.atacar()
+meuHeroi5.atacar()
 
 
